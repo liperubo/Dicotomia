@@ -15,7 +15,7 @@ Turma: CP004TIM2*/
 
 typedef struct Dicotomia
 {
-	float A;
+  float A;
   float B;
   float M;
   float fa;
@@ -118,18 +118,18 @@ int main()
 
 void alocaDicotomia(Dicotomia **p, int m)
 {
-	if ((*p = (Dicotomia *)realloc(*p, m * sizeof(Dicotomia))) == NULL)
-	{
-		printf("\nErro na alocacao. O programa sera encerrado!");
-		exit(1);
-	}
+  if ((*p = (Dicotomia *)realloc(*p, m * sizeof(Dicotomia))) == NULL)
+  {
+    printf("\nErro na alocacao. O programa sera encerrado!");
+    exit(1);
+  }
 }
 
 void alocaInt(int **p, int m){
   if((*p = (int*)realloc(*p, m * sizeof(int))) == NULL)
   {
     printf("\nErro na alocacao. O programa sera encerrado!");
-		exit(1);
+    exit(1);
   }
 }
 
